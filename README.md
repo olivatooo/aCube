@@ -13,9 +13,9 @@ _A little brief of the project_: Arduino sends informations of the environment v
 ### Android
 #### Receive informations via bluetooth and do all the checks.
 * Android-Studio
-* ABNT Laws
+* ABNT Standards
 
 ###### Tomorrow i'll add more informations
-###### Originally created by: Gabriel Olivato , Gabriel Teston , Bianca Campos , Marcelo Schimdt.
-##### Special thanks to: Danilo Queiroz Barbosa, Priscila Keli Frizzarin.
+##### Originally created by: Gabriel Olivato , Gabriel Teston , Bianca Campos , Marcelo Schimdt.
+###### Special thanks to: Danilo Queiroz Barbosa, Priscila Keli Frizzarin.
 ###### Prizes: Amostra do Cotuca 2016 - Unicamp.
