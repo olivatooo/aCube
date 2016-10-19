@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">aCube</string>
+    <string name="init">Agora vamos configurar o seu aCube. Comece preenchendo seus dados :D</string>
+    <string name="question">Alergias respiratórias?</string>
+    <string name="ambiente"/>
+    <string name="hospitais"/>
+    <string name="perfil">Perfil do Usuário</string>
+    <string name="a">Esses dados estão corretos?</string>
+    <string name="b">Sim, proceder</string>
+    <string name="c">Não, corrigir</string>
+    <string name="d">Ops, você preencheu corretamente todos os campos?</string>
+    <string name="e">Sim</string>
+    <string name="f">Não</string>
+    <string name="g">Deseja realmente sair?\n Caso sair você será desconectado.</string>
+    <string name="h">Sair</string>
+    <string name="i">Condições Ambientes</string>
+
+    <string-array name="ambiente">
+        <item>Escritórios</item>
+        <item>Auditórios</item>
+        <item>Residência</item>
+        <item>Hotéis</item>
+        <item>Hospital</item>
+        <item>Escolas</item>
+        <item>Restaurantes</item>
+        <item>Igrejas e Templos</item>
+    </string-array>
+    <string-array name="hospitais">
+        <item>Centro cirúrgico</item>
+        <item>Enfemaria</item>
+        <item>Apartamento</item>
+        <item>Berçário</item>
+         <item>Laboratórios</item>
+    </string-array>
+    <string-array name="escolas">
+        <item>Biblioteca</item>
+        <item>Sala de Aula</item>
+        <item>Laboratório</item>
+    </string-array>
+    <string-array name="hoteis">
+        <item>Recepção</item>
+        <item>Sala de Estar</item>
+        <item>Apartamentos</item>
+        <item>Restaurante</item>
+    </string-array>
+    <string-array name="residencia">
+        <item>Quarto</item>
+        <item>Escritório</item>
+        <item>Sala de Projetos</item>
+        <item>Sala de Estar</item>
+       <item>Sala de Estar (Local de trabalho especifico)</item>
+    </string-array>
+    <string-array name="restaurantes">
+        <item>Geral</item>
+    </string-array>
+    <string-array name="auditorios">
+        <item>Tribuna</item>
+        <item>Plateia</item>
+    </string-array>
+    <string-array name="escritorios">
+        <item>Sala de Reunião</item>
+        <item>Sala de Gerência</item>
+        <item>Sala de Projetos</item>
+    </string-array>
+    <string-array name="igreja">
+        <item>Com ofício (Durante cerimonias)</item>
+        <item>Sem ofício (Sem cerimonias)</item>
+    </string-array>
+    <!--..........AJUDA............-->
+    <string name="passo1">Construa o seu perfil, respondendo ao questionário, para que o app possa analisar o ambiente de acordo com suas especificidades :)</string>
+    <string name="passo2">Deixe o aCube em sua mesa de trabalho, e conecte-o ao seu app pelo bluetooth ao começar o dia</string>
+    <string name="passo3">Feito isso, você já terá acesso às condições ambientes do seu local, juntamente com seus respectivos gráficos, basta ir em \'Monitorar Condições Ambientes\' no menu principal</string>
+    <string name="passo4">Pronto, agora você poderá contribuir com sua saúde ao identificar os problemas e melhorar seu local de trabalho! :D</string>
+
+
+</resources>

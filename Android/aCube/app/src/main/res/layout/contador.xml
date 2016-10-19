@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Horário de Saída"
+        android:id="@+id/textView9"
+        android:layout_marginBottom="121dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00:00"
+        android:id="@+id/tempo_rest"
+        android:layout_marginTop="24dp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tempo restante:"
+        android:id="@+id/textView11"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/tempo_rest"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00:00"
+        android:id="@+id/fim_exp"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <acube.acube.com.ArcProgress
+        android:onClick="IniciarTrampo"
+        android:id="@+id/arc_progress"
+        android:background="#fff"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        custom:arc_progress="0"
+        custom:arc_bottom_text="CLIQUE PARA INICIAR SEU DIA"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

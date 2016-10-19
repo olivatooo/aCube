@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#67b6ff"
+    >
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#67b6ff"
+        android:layout_margin="6dp">
+
+
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:maxLength="20"
+            android:background="#fff"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:background="#fff"
+            android:maxLength="2"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/hora_text"
+            android:layout_toStartOf="@+id/hora_text" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:text="Sexo:" android:id="@+id/textView3"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_above="@+id/editText2"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Alergias respiratórias?"
+            android:id="@+id/textView4"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:textColor="#fff"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Possui LER?" android:id="@+id/textView5"
+            android:layout_marginTop="19dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/radioGroup"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="(Lesão por Esforço  Repetitivo)"
+            android:id="@+id/textView7"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Usa lentes de contato?"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:id="@+id/textView6"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/radioler"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:background="#fff"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/textView16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Horas de trabalho:"
+            android:textColor="#fff"
+            android:id="@+id/textView8"
+            android:layout_marginTop="113dp"
+            android:layout_below="@+id/spinner"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView android:layout_width="50dp"
+            android:onClick="SaveAndContinue"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/next"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/horas"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ambiente de Trabalho:"
+            android:id="@+id/textView16"
+            android:layout_marginTop="25dp"
+            android:textColor="#fff"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_below="@+id/radiolente"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/especificacoes"
+            android:textColor="#fff"
+            android:background="#fff"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horas"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="0"
+            android:layout_below="@+id/hora_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            android:backgroundTint="#fb0202" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="*"
+            android:textColor="#fff"
+            android:id="@+id/hora_text"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nome:"
+            android:id="@+id/textView12"
+            android:textColor="#fff"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Idade:"
+            android:textColor="#fff"
+            android:id="@+id/textView21"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/editText"
+            android:layout_alignRight="@+id/textView12"
+            android:layout_alignEnd="@+id/textView12" />
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_above="@+id/editText2"
+            android:layout_toEndOf="@+id/textView3"
+            android:orientation="horizontal"
+            android:id="@+id/radiosex">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textColor="#fff"
+                android:id="@+id/radioButton2"
+                android:checked="false" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textColor="#fff"
+                android:id="@+id/radioButton3"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:id="@+id/radioButton6"
+                android:textColor="#fff"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"
+                android:id="@+id/radioButton7"
+                android:textColor="#fff"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/radioler"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:textColor="#fff"
+                android:id="@+id/radioButton5"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="Não"
+                android:id="@+id/radioButton8"
+                android:checked="false" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/radiolente"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:textColor="#fff"
+                android:id="@+id/radioButton9"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Não"
+                android:id="@+id/radioButton10"
+                android:checked="false" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="android:actionBarSize">100dp</item>
+        
+    </style>
+
+
+
+
+</resources>

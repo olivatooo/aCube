@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:textAlignment="viewStart">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:id="@+id/imageButton"
+            android:onClick="ToCondicoes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#408dd2"
+            android:clickable="true"
+            android:baselineAlignBottom="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Monitorar"
+            android:onClick="ToCondicoes"
+            android:id="@+id/textView10"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="58dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_marginStart="58dp"
+            android:layout_alignLeft="@+id/textView25"
+            android:layout_alignStart="@+id/textView25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ToCondicoes"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Condições Ambientes"
+            android:id="@+id/textView25"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_below="@+id/textView10"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginEnd="36dp" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:id="@+id/imageButton2"
+            android:onClick="ToTime"
+            android:background="#34cfbe"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView4"
+            android:src="@android:drawable/ic_menu_recent_history"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_alignRight="@+id/imageView5"
+            android:layout_alignEnd="@+id/imageView5"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Controlar"
+            android:textColor="#ffff"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:textSize="20dp"
+            android:id="@+id/textView26"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_alignRight="@+id/textView10"
+            android:layout_alignEnd="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tempo de Trabalho"
+            android:id="@+id/textView27"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_below="@+id/textView26"
+            android:layout_alignRight="@+id/textView25"
+            android:layout_alignEnd="@+id/textView25" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:id="@+id/imageButton3"
+            android:background="#ff9140"
+            android:onClick="ToQuestion"
+            android:layout_below="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:onClick="toAjuda"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:id="@+id/imageButton4"
+            android:background="#f3c300"
+            android:layout_below="@+id/imageButton3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView5"
+            android:onClick="ToCondicoes"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toLeftOf="@+id/textView25"
+            android:layout_toStartOf="@+id/textView25"
+            android:layout_marginTop="23dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView3"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            android:layout_marginBottom="33dp"
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Alterar Perfil"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:id="@+id/textView28"
+            android:layout_marginTop="22dp"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10" />
+
+        <ImageButton
+            android:onClick="toAbout"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:id="@+id/imageButton5"
+            android:layout_below="@+id/imageButton4"
+            android:background="#de6e00"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ajuda"
+            android:id="@+id/textView29"
+            android:layout_marginBottom="22dp"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/imageView6"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sobre o aplicativo"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000"
+            android:shadowRadius="2"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:id="@+id/textView30"
+            android:layout_marginBottom="23dp"
+            android:layout_alignBottom="@+id/imageView7"
+            android:layout_alignRight="@+id/textView28"
+            android:layout_alignEnd="@+id/textView28" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView6"
+            android:src="@android:drawable/ic_menu_help"
+            android:layout_alignTop="@+id/imageButton4"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_marginTop="29dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView7"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:layout_below="@+id/imageButton4"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_marginTop="29dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
